@@ -107,6 +107,19 @@ br {
   color: var(--color-default-text);
 }
 
+.alert-message {
+
+  background-color: #ffcccc;
+  color: #cc0000;
+  max-width: 800px;
+  border: 1px solid #cc0000;
+  padding: 16px;
+  margin: 16px 0;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+}
+
 a:hover {
   color: var(--color-accent) !important;
 }
@@ -161,16 +174,16 @@ section#hero {
   max-width: 800px;
 }
 
-#hero > h1 {
+#hero>h1 {
   text-align: center;
   letter-spacing: -1px;
 }
 
-#hero > p {
+#hero>p {
   margin: 8px 0;
 }
 
-#hero > img {
+#hero>img {
   margin-top: 16px;
   margin-bottom: 16px;
 }
@@ -256,6 +269,7 @@ section#contact {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  align-items: center;
 }
 
 #contact h2 {
@@ -274,16 +288,16 @@ footer {
   text-align: center;
 }
 
-footer > a {
+footer>a {
   text-decoration: underline;
 }
 
-footer > a:link,
-footer > a:visited {
+footer>a:link,
+footer>a:visited {
   color: var(--color-light-text);
 }
 
-footer > a:hover {
+footer>a:hover {
   color: var(--color-accent);
 }
 
@@ -300,6 +314,7 @@ footer > a:hover {
   use {
     fill: #ffffff;
   }
+
   &:hover {
     use {
       fill: #0866ff;
@@ -366,7 +381,7 @@ a.floating:hover {
   }
 }
 
-a.floating > i.fas {
+a.floating>i.fas {
   color: var(--color-light-text);
   font-size: 24px;
   scale: 1.3;
